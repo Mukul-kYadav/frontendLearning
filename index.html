@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+     body {background-color: hsl(217, 54%, 11%); font-family: 'Outfit', sans-serif; }
+    .card-bg { 
+      background-color: hsl(216, 50%, 16%); 
+      width: 250px; 
+      padding: 25px; 
+      border-radius: 10px; 
+      margin-top: 50px;
+      margin-bottom: 20px;
+      box-shadow: 20px 20px 20px hsl(216, 52%, 14%);
+    }
+    hr{background-color: hsl(215, 32%, 27%);}
+    .line {color: hsl(215, 51%, 70%);}
+    .equ{color: hsl(0, 0%, 100%);}
+    .chamak{color: hsl(178, 100%, 50%);}
+    .bada{font-weight: 600; font-size: 18px;}
+    .beech{font-weight: 600;}
+    .chota{margin-top: 15px;}
+    .imgsize{width: 300px; height:auto; border-radius: 10px; }
+    .beechm{display: flex; justify-content: center;}
+    .golimg{max-width: 30px; height: auto; border-radius: 50%; border: solid 1px white;}
+    .lefat{float: right; }
+    .imgkbaad{margin: 0px 0px 0px 15px; box-sizing: border-box; ; }
+    .arrowimg{width: 10px; margin-right: 8px;}
+    .arrowimg2{width: 17px; margin-right: 4px;}
+    .funt{font-size: 14px;}
+    .hoverable:hover{color: hsl(178, 100%, 50%); cursor: pointer;}
+    .rlefat{float: left; margin: 4px 8px 0 0;}
+    hr {
+    border: none;
+    height: 1px;
+    background-color: hsl(215, 32%, 27%) /* Modern Browsers */
+}
+    /* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Make the image to responsive */
+.image {
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: hsla(178, 100%, 50%, 0.37);
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 1;
+}
+
+/* When you move the mouse over the icon, change color */
+.fa-eye:hover {
+  color: rgb(255, 254, 254);
+  opacity: 1;
+}
+  </style>
+</head>
+<body >
+  <div class="beechm">
+    <div class="card-bg">
+      <div class="">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <div class="container">
+        <img src="images/image-equilibrium.jpg" alt="Avatar" class="image imgsize">
+        <div class="overlay imgsize hoverable">
+        <a href="#" class="icon" title="eye">
+         <i class="fa fa-eye "></i>
+        </a>
+        </div>
+        </div>
+       
+      </div>
+        <div class="equ bada">
+          <p ><a class="hoverable">Equilibrium #3429</a></p>
+        </div>
+
+        <div class="line ">
+          <p class="funt beech">Our Equilibrium collection promotes balance and calm.</p>
+        </div>  
+        
+        <div class="">
+
+          <span class="chamak bada funt "><img class="arrowimg rlefat" src="images/icon-ethereum.svg">0.041 ETH</span>
+
+          <span class="line bada funt lefat"><img class="arrowimg2" src="images/icon-clock.svg"><div class="lefat">3 days left</div></span>
+
+        </div>
+
+        <hr style="margin-top: 20px;">
+
+        <div class="line chota">
+          <img class="golimg " src="images/image-avatar.png">
+          <div style="float: right; margin: 5px 45px 0 0;"><span class="imgkbaad bada funt">Creation of <span class="funt equ bada hoverable">Jules Wyvern</span></span></div>
+        </div>
+    
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mukul Kumar yadav</a>.
+  </div>
+</body>
+</html>
