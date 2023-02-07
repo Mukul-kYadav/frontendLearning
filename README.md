@@ -37,8 +37,8 @@ https://github.com/Mukul-kYadav/frontendLearning/blob/main/final.JPG
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Mukul-kYadav/frontendLearning01.git)
-- Live Site URL: [Add live site URL here](https://gracious-mayer-1cb345.netlify.app)
+- Solution URL: [Click Here](https://github.com/Mukul-kYadav/frontendLearning01.git)
+- Live Site URL: [Click Here](https://gracious-mayer-1cb345.netlify.app)
 
 ## My process
 
